@@ -1,0 +1,4 @@
+__pycache__/
+server.log
+.codex_usage.db*
+.claude/
