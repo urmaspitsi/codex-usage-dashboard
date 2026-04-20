@@ -2,7 +2,11 @@
 
 Local usage dashboard for Codex Desktop.
 
+This codebase is a direct port of the Claude usage dashboard by Pawel Huryn, originally published as [phuryn/claude-usage](https://github.com/phuryn/claude-usage), (Product Compass Newsletter, [www.productcompass.pm](https://www.productcompass.pm)), adapted for Codex Desktop local data sources.
+
 This project now reads Codex's local state from `~/.codex`, builds a separate dashboard-owned SQLite database in this repo, and serves a local dashboard with thread, model, project, token, and rate-limit views.
+
+`codex_migration_tasklist.md` contains the migration path that Codex App implemented, using GPT-5.4 reasoning=high.
 
 ## Safety
 
