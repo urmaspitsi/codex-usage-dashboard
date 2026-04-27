@@ -794,7 +794,7 @@ async function loadData() {
     return;
   }
   rawData = data;
-  document.getElementById('meta').textContent = 'Updated: ' + data.generated_at + ' · Auto-refresh every 30 seconds';
+  document.getElementById('meta').textContent = 'Updated: ' + data.generated_at + ' · Auto-refresh every 120 seconds';
   if (selectedModels.size === 0) {
     data.all_models.forEach(model => selectedModels.add(model));
     buildModelFilter(data.all_models);
@@ -804,7 +804,7 @@ async function loadData() {
 }
 
 loadData();
-setInterval(loadData, 30000);
+setInterval(loadData, 120000);
 </script>
 </body>
 </html>
